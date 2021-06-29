@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "aa3f28bd-011b-4018-ac4c-a1604b861e07",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DealerTrack",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44381/Deal",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"Deal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Csv",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/csv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/F:/Canada/Dealertrack-CSV-Example.csv"
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44381/Deal",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44381",
+					"path": [
+						"Deal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
